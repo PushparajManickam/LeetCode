@@ -1,0 +1,13 @@
+public class OneBits {
+    // you need to treat n as an unsigned value
+    public int hammingWeight(int n) {
+       int result=0, temp=1;
+        for(int loop=0; loop<32; loop++)
+        {
+            if((n&temp) != 0)
+                result++;
+            n = n>>1;
+        }
+        return result;
+    }
+}

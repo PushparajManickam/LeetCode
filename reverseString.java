@@ -1,11 +1,12 @@
-class Solution {
+//344. Reverse String
+class reverseString {
     public void reverseString(char[] s) {
-        char temp;
-        for(int i=0, j=s.length-1;i<j;i++,j--)
+     if(s.length == 0) return ;
+        for(int loop=0;loop<s.length/2;loop++)
         {
-            temp=s[j];
-            s[j]=s[i];
-            s[i]=temp;
+            char temp           = s[s.length-loop-1];
+            s[s.length-loop-1]  = s[loop];
+            s[loop]             = temp;
         }
     }
 }
