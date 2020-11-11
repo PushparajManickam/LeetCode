@@ -1,6 +1,6 @@
 class MajorElement {
     public int majorityElement(int[] nums) {
-        int loop1, loop2, temp, n, major, count=0,tempcount;
+        int loop1, loop2, n, major, count=0,tempcount;
         n=nums.length;
         major = nums[0];
         for(loop1=0;loop1<n;loop1++)
