@@ -1,4 +1,4 @@
-class MajarElement {
+class MajorElement {
     public int majorityElement(int[] nums) {
         int temp, temp1, maxicount=nums[0], n, count=0,tempcount;
         n=nums.length;
